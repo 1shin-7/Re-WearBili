@@ -11,8 +11,8 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.Text
+import androidx.wear.compose.material.MaterialTheme
+import androidx.wear.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.collectAsState
 import androidx.compose.runtime.getValue
@@ -86,7 +86,7 @@ fun CacheListScreen(
                     stickyHeader(key = "text1") {
                         Text(
                             text = "正在缓存",
-                            style = MaterialTheme.typography.h2,
+                            style = MaterialTheme.typography.title2,
                             color = Color.White
                         )
                     }
@@ -114,7 +114,7 @@ fun CacheListScreen(
                     stickyHeader(key = "text2") {
                         Text(
                             text = "已缓存",
-                            style = MaterialTheme.typography.h2,
+                            style = MaterialTheme.typography.title2,
                             color = Color.White
                         )
                     }

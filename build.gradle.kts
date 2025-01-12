@@ -10,3 +10,4 @@ plugins {
     alias(libs.plugins.androidTest) apply false
     alias(libs.plugins.baselineprofile) apply false
 }
+val defaultMinSdkVersion by extra(25)

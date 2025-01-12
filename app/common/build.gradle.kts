@@ -11,7 +11,7 @@ android {
     buildToolsVersion = libs.versions.buildTool.get()
 
     defaultConfig {
-        minSdk = 21
+        minSdkVersion(rootProject.extra["defaultMinSdkVersion"] as Int)
         lint.targetSdk = 35
 
     }

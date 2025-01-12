@@ -21,7 +21,7 @@ android {
     val releaseNumber = 3
     defaultConfig {
         applicationId = "cn.spacexc.wearbili.remake"
-        minSdk = 21
+        minSdkVersion(rootProject.extra["defaultMinSdkVersion"] as Int)
         targetSdk = 35
         compileSdk = 35
         versionCode = 47
@@ -140,6 +140,7 @@ dependencies {
     implementation(libs.hilt.android)
     implementation(libs.hilt.work)
     implementation(libs.androidx.profileinstaller)
+    implementation(libs.androidx.compose.material)
     "baselineProfile"(project(":baselineprofile"))
     kapt(libs.hilt.compiler)
     kapt(libs.hilt.work.compiler)
