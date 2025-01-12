@@ -51,7 +51,7 @@ protobuf = "0.9.4"
 room = "2.6.1"
 buildTool = "34.0.0"
 
-agp = "8.5.0"
+agp = "8.7.2"
 
 kotlin = "2.0.0"
 workRuntime = "2.9.1"
